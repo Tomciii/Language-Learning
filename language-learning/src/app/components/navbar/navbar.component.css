@@ -1,0 +1,43 @@
+.body {
+  font-family: "Cinzel Decorative";
+}
+
+.navbar-wrapper {
+  background: #313030;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "Cinzel Decorative";
+  position: relative;
+}
+
+.navbar-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navbar-header {
+  display: inline-block;
+}
+
+.dropdowns-wrapper {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.navbar-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "Cinzel Decorative";
+}
+
+h3 {
+  font-weight: bold;
+  color:white;
+  font-family: "Cinzel Decorative";
+}
