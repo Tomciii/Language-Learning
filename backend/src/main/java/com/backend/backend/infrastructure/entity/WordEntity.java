@@ -2,7 +2,7 @@ package com.backend.backend.infrastructure.entity;
 
 import jakarta.persistence.*;
 
-@Entity(name = "ART")
+@Entity(name = "WORDS")
 public class WordEntity {
 
     @Id()

@@ -24,7 +24,7 @@ public class WordController implements PublicApi {
         try {
             return ResponseEntity.ok(this.service.findAll().toString());
         } catch (Exception e){
-            return new ResponseEntity<>("Error loading art: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>("Error loading word: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
@@ -33,7 +33,7 @@ public class WordController implements PublicApi {
         try {
             return ResponseEntity.ok(this.service.save(art));
         } catch (Exception e) {
-            return new ResponseEntity<>("Error saving art: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>("Error saving word: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
