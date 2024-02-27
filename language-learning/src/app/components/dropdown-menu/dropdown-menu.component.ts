@@ -14,7 +14,7 @@ export class DropdownMenuComponent {
   @Input() handleClickValue: string = "";
 
   navigateToPage(pageName: string) {
-    this.router.navigate(["flashcards", pageName]);
+    this.router.navigate(["table", pageName]);
   }
 
 

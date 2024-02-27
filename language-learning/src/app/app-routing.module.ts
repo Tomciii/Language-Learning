@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'table/:pageName', component: TopicTableComponent },
-  { path: 'flashcards/:pageName', component: FlashcardComponent },
+  { path: 'flashcards', component: FlashcardComponent },
 ];
 
 @NgModule({
