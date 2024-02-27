@@ -1,1 +1,103 @@
+.body {
+  background: #333131;
+}
 
+td, th {
+  font-size: 18px !important;
+}
+
+.mdc-data-table__table {
+  max-width: 80% !important;
+  min-width: 80% !important;
+  margin: 0 auto !important;
+}
+
+.tableWrapper {
+  padding-top: 50px;
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.itemTable {
+  flex: 1;
+}
+
+/deep/ .mat-checkbox-frame {
+  border-color: grey
+}
+
+.itemTable, h3 {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cinzel Decorative";
+}
+
+.itemTable {
+  width: 50%;
+  margin: auto auto 70px;
+
+}
+
+.mat-elevation-z8 {
+  width: 100%;
+}
+
+table td,
+table th {
+  font-size: 10px;
+  font-family: "Cinzel Decorative";
+  color: wheat;
+}
+
+table td {
+  color: #e8e8e8;
+}
+
+table th, tr {
+  background: #333131;
+}
+
+
+
+.mat-checkbox .mat-checkbox-frame {
+  transform: scale(1.2);
+}
+
+.mat-checkbox-checked .mat-checkbox-background {
+  transform: scale(1.2);
+}
+
+table th {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.itemTable .mat-row:hover {
+  background-color: #252323; /* Set the background color for even rows */
+}
+
+table tr:hover {
+  background-color: #252323;
+}
+
+.itemTable .mat-row:hover {
+  background-color: #333131; /* Set the background color for even rows */
+}
+
+img {
+  padding: 10px;
+  max-height: 250px;
+  max-width: 150px;
+}
+
+.bold {
+  font-weight: bold;
+  color: wheat;
+}
+
+p {
+  color: #e8e8e8;
+}

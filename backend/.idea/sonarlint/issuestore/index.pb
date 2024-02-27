@@ -9,7 +9,5 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 7
 HELP.md,1\a\1a273f73b7a477b0745593641bd708a6182c7ad5
-v
-Fsrc/main/java/com/backend/backend/infrastructure/entity/ArtEntity.java,8\f\8f5ca29fdecf1b21f668f61c8096d5069cee24b1
 ;
 Jenkinsfile,0\c\0c2c5c506cef0ed2d3ad2b7e45e97980b66f5520

@@ -15,6 +15,9 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatTableModule} from "@angular/material/table";
 import { HomeComponent } from './pages/home/home.component';
 import {RouterModule} from "@angular/router";
+import {AppRoutingModule} from "./app-routing.module";
+import { DropdownMenuComponent } from './components/dropdown-menu/dropdown-menu.component';
+import { TopicTableComponent } from './pages/topic-table/topic-table.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import {RouterModule} from "@angular/router";
     NavbarComponent,
     TableComponent,
     FlashcardComponent,
-    HomeComponent
+    HomeComponent,
+    DropdownMenuComponent,
+    TopicTableComponent
   ],
   imports: [
     HttpClientModule,
@@ -34,6 +39,7 @@ import {RouterModule} from "@angular/router";
     MatButtonModule,
     MatCheckboxModule,
     FormsModule,
+    AppRoutingModule,
     RouterModule
   ],
   providers: [],

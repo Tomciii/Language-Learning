@@ -4,10 +4,10 @@
       <button mat-button><h3>{{title}}</h3></button>
     </div>
     <div class="dropdowns-wrapper">
-
+      <app-dropdown-menu buttonTitle="Topics" [menuItems]="dropdown"></app-dropdown-menu>
     </div>
     <div class="navbar-menu">
-
+        <a mat-button href="/flashcards"><h3>Flashcards</h3></a>
     </div>
   </div>
 </div>

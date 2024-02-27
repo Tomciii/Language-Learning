@@ -1,0 +1,4 @@
+<button mat-button color="Accent" [matMenuTriggerFor]="menu"><h4>{{ buttonTitle }}</h4></button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item *ngFor="let item of menuItems" (click)="this.navigateToPage(item)">{{ item }}</button>
+</mat-menu>

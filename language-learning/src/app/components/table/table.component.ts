@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {WordFacade} from "../../facade/word.facade";
 
 @Component({
@@ -8,7 +8,10 @@ import {WordFacade} from "../../facade/word.facade";
 })
 export class TableComponent implements OnInit {
   constructor(private wordFacade: WordFacade) {}
+
+
   dataSource: any = [];
+
   displayedColumns: string[] = ['id', 'word', 'meaning', 'type'];
 
   async ngOnInit(): Promise<void> {
