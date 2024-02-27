@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {WordFacade} from "../../facade/word.facade";
-import {Word} from "../../model/word.model";
 
 @Component({
   selector: 'app-table',
