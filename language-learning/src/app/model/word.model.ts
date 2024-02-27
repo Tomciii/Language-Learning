@@ -1,6 +1,6 @@
 export interface Word {
-  position: number;
+  id: number;
   word: string;
   meaning: string;
-  type: number;
+  topic: number;
 }

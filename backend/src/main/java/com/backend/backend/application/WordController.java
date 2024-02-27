@@ -20,7 +20,7 @@ public class WordController implements PublicApi {
     }
 
     @Override
-    public ResponseEntity getAllArt() {
+    public ResponseEntity getAll() {
         try {
             return ResponseEntity.ok(this.service.findAll().toString());
         } catch (Exception e){

@@ -7,15 +7,15 @@ import {Word} from "../model/word.model";
 @Injectable({
   providedIn: 'root',
 })
-export class ArtFacade {
-  private getAllArt = 'http://localhost:8085/application/public/api/getAllArt';
-  private save = 'http://localhost:8085/application/public/api/save'
-  private deleteUrl = 'http://localhost:8085/application/public/api/delete'
+export class WordFacade {
+  private getAll = 'http://localhost:8085/public/api/getAll';
+  private save = 'http://localhost:8085/public/api/save'
+  private deleteUrl = 'http://localhost:8085/public/api/delete'
 
   constructor(private http: HttpClient) {}
 
-  getArtList() {
-    return firstValueFrom(this.http.get<Word[]>(this.getAllArt));
+  getAllWords() {
+    return firstValueFrom(this.http.get<Word[]>(this.getAll));
   }
 
   saveArt(art: Word){
