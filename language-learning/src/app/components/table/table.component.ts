@@ -10,7 +10,7 @@ export class TableComponent{
 
   @Input() dataSource: any = [];
 
-  displayedColumns: string[] = ['id', 'word', 'meaning', 'type'];
+  displayedColumns: string[] = ['word', 'meaning'];
 
   async ngOnInit(): Promise<void> {
   }

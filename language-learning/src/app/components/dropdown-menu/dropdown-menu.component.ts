@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 import {Router} from "@angular/router";
 
 @Component({
@@ -8,7 +7,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./dropdown-menu.component.css']
 })
 export class DropdownMenuComponent {
-  constructor(private router: Router, private http: HttpClient) {}
+  constructor(private router: Router) {}
   @Input() buttonTitle: string = "";
   @Input() menuItems: string[] = [""];
   @Input() handleClickValue: string = "";
@@ -16,6 +15,5 @@ export class DropdownMenuComponent {
   navigateToPage(pageName: string) {
     this.router.navigate(["table", pageName]);
   }
-
 
 }
