@@ -14,6 +14,12 @@ public interface PublicApi {
     )
     ResponseEntity getAll();
 
+    @GetMapping(
+            value = "/public/api/get/{topic}",
+            produces = {"application/json"}
+    )
+    ResponseEntity get(@PathVariable String topic);
+
     @PostMapping(
             value = "/public/api/save",
             produces = {"application/json"}

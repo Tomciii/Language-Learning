@@ -8,4 +8,6 @@ public interface IWordService {
     List<WordEntity> findAll();
     WordEntity save(WordEntity entity);
     void delete(int index);
+
+    List<WordEntity> findByTopic(String topic);
 }

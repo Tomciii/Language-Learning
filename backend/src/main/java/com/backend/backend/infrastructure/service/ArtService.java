@@ -32,4 +32,9 @@ public class ArtService implements IWordService {
     public void delete(int index) {
          this.repository.deleteById(index);
     }
+
+    @Override
+    public List<WordEntity> findByTopic(String topic) {
+        return this.repository.findByTopic(topic);
+    }
 }

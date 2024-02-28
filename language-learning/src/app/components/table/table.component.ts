@@ -6,16 +6,12 @@ import {WordFacade} from "../../facade/word.facade";
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.css'],
 })
-export class TableComponent implements OnInit {
-  constructor(private wordFacade: WordFacade) {}
+export class TableComponent{
 
-
-  dataSource: any = [];
+  @Input() dataSource: any = [];
 
   displayedColumns: string[] = ['id', 'word', 'meaning', 'type'];
 
   async ngOnInit(): Promise<void> {
-    this.dataSource = await this.wordFacade.getAllWords();
-    console.log(this.dataSource)
   }
 }

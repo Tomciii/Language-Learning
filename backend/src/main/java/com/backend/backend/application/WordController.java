@@ -29,6 +29,15 @@ public class WordController implements PublicApi {
     }
 
     @Override
+    public ResponseEntity get(String topic) {
+        try {
+            return ResponseEntity.ok(this.service.findByTopic(topic).toString());
+        } catch (Exception e){
+            return new ResponseEntity<>("Error loading word: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @Override
     public ResponseEntity save(@RequestBody WordEntity art) {
         try {
             return ResponseEntity.ok(this.service.save(art));

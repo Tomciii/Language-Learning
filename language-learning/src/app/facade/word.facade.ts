@@ -9,10 +9,15 @@ import {Word} from "../model/word.model";
 })
 export class WordFacade {
   private getAll = 'http://localhost:8085/public/api/getAll';
-  private save = 'http://localhost:8085/public/api/save'
-  private deleteUrl = 'http://localhost:8085/public/api/delete'
+  private save = 'http://localhost:8085/public/api/save';
+  private deleteUrl = 'http://localhost:8085/public/api/delete';
+  private getByTopic = 'http://localhost:8085/public/api/get/';
 
   constructor(private http: HttpClient) {}
+
+  getWordsByTopic(topic: String) {
+    return firstValueFrom(this.http.get<Word[]>(this.getByTopic + topic));
+  }
 
   getAllWords() {
     return firstValueFrom(this.http.get<Word[]>(this.getAll));
