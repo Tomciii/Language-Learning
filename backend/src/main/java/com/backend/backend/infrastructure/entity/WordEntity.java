@@ -57,7 +57,7 @@ public class WordEntity {
 
     @Override
     public String toString() {
-        return String.format("{\"id\": \"%s\",\"meaning\": \"%s\", \"word\": \"%s\", \"topic\": \"%s\"}",
-                this.id, this.meaning, this.word, this.topic);
+        return String.format("{\"id\": \"s\",\"meaning\": \"%s\", \"word\": \"%s\", \"topic\": \"%s\"}",
+                 this.meaning, this.word, this.topic);
     }
 }

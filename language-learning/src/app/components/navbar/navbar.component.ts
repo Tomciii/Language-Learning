@@ -11,7 +11,7 @@ export class NavbarComponent implements OnInit{
 
   title: string = "Learning a Language";
 
-  @Input() dropdown: string[] = ["Test","Hello"];
+  @Input() dropdown: string[] = ["color"];
 
   ngOnInit(): void {
   }

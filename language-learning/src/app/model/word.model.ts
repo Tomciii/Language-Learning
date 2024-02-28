@@ -1,5 +1,5 @@
 export interface Word {
-  id: number;
+  id: number | null | undefined;
   word: string;
   meaning: string;
   topic: string;
